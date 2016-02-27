@@ -1,5 +1,6 @@
 ---
-title:  OER kollaborativ mit GitBook entwickeln
+title: |
+  OER kollaborativ mit GitBook entwickeln
 subtitle: |
   Fork und Pull Request: neue Kulturtechniken des Teilens?
 author: |
@@ -31,7 +32,6 @@ nocite: |
 - ~~Training~~
 - ~~Lösung~~
 - ~~GitHub-Schulung~~
->- Unzufriedenheit möglich
 
 ## Ziele des Workshops
 
@@ -53,12 +53,14 @@ nocite: |
 
 Die Präsentation steht unter CC-BY auf GitHub zum Forken bereit.
 
+http://meine-praesentation.de
+
 <!-- ############## TODO ######################### -->
 \includegraphicscopyright[width=.4\textwidth]{./abb/pyprocard}{Abb.: Fork me on GitHub!}
 <!-- ############## TODO ######################### -->
 
 # Einführung
-## Einführung
+## Definition von OER nach UNESCO
 
 > (OER sind) "Lehr-, Lern- und Forschungsressourcen in Form jeden
 Mediums, digital oder anderweitig, die gemeinfrei sind oder unter
@@ -68,7 +70,7 @@ durch Andere ohne oder mit **geringfügigen Einschränkungen**
 erlaubt. Das Prinzip der offenen Lizenzierung bewegt sich innerhalb
 des bestehenden Rahmens des Urheberrechts, wie er durch einschlägige
 internationale Abkommen festgelegt ist, und **respektiert die Urheberschaft**
-an einem Werk." (Pariser Erklärung)
+an einem Werk." (UNESCO, 2012, "Pariser Erklärung")
 
 ## Die 5 R(V) der Open Educational Resources
 
@@ -89,15 +91,21 @@ Durch Kopieren kommen Nutzer in den Besitz einer bearbeitbaren Fassung. Aber:
 - Wie können wir gemeinsam an einem Werk arbeiten, das in jedem Moment allen gehört?
 - Wie können wir Änderungen zwischen "Kindern" und "Eltern" erkennen?
 
-## Fork und Pull Request
+## ALMS Framework nach D. Wiley
 
-- Zwei Handlungen stehen im Mittelpunkt der Kollaboration: *fork* und *pull request*
-- Sie konstituieren eine neue Kulturtechnik des Teilens und sind die digitalen Entsprechungen für Nehmen und Geben
+1. **A**ccess to Editing Tools
+    - offene, kostenlose und nicht exotische Software
+1. **L**evel of Expertise Required
+    - erforderliche Kenntnisse fürs Remixen
+1. **M**eaningfully Editable
+    - offene Formate
+1. **S**elf-Sourced
+    - Format für den Genuss des OER gleich dem für Revise/Remix
 
-## Zusammenarbeit auf GitHub
+## Leitende Fragestellung des Workshops
 
 \begin{center}
-\includegraphicscopyright[width=0.85\textwidth]{./abb/forkflow.eps}{Abbildung: Typische Schritte beim Teilen über Git/GitHub Quelle: Axel Dürkop}
+\Large Was ist von GitBook und GitHub hinsichtlich dieser Anforderungen und der formulierten Fragen zu halten?
 \end{center}
 
 # GitBook
@@ -111,20 +119,52 @@ Durch Kopieren kommen Nutzer in den Besitz einer bearbeitbaren Fassung. Aber:
 
 ## GitBook: Hands on!
 
+**Durchlauf 1: Ein erstes Buch, jeder für sich**
+
 - Registrierung, Email-Bestätigung
+- Eintragen des Nutzernamens unter https://ethercalc.org/
 - Unter Settings: Sprachenvielfalt bestaunen!
 - In der Gruppe: Einigung auf eine CC-Lizenz
 - Jeder für sich, Anlegen eines neuen Buchs, **noch keine Kollaboration**
+- Alle Quellen korrekt ausgewiesen, das Buch ist unmittelbar nach dem Speichern öffentlich einsehbar!
 
-# Markdown
-## Lingua franca der Textformatierung
+## Markdown, lingua franca der Textauszeichnung
 
 - vereinfachte Auszeichnungssprache
-- kann in zahlreiche Endformate konvertiert werden (z.B. mit pandoc http://pandoc.org/)
+- kann in zahlreiche Endformate konvertiert werden (z.B. mit http://pandoc.org/)
 - Eine Übersicht der Schreibweisen: https://de.wikipedia.org/wiki/Markdown#Auszeichnungsbeispiele
 
-# Git und GitHub
+## Benutzeroberfläche des Editors
 
+- Formatierungsleiste (Markdown)
+- **Table of Contents**: steht in Beziehung zu konkreten Markdown-Dateien
+- **Files Tree**: Baum der Markdown-Dateien und Artefakte
+- **Editor-Bereich**
+- **Vorschau-Bereich**
+- Bedeutung und Aufbau der Dateien `README.md` und `SUMMARY.md`
+
+## GitBook kollaborativ
+
+**Durchlauf 2: Ein zweites Buch, kollaborativ**
+
+**Szenario**: Eine Gruppe von Menschen, deren Mitglieder sich kennen (wir), entscheidet, gemeinsam eine OER zu entwickeln. Einer (Axel) initiiert ein GitBook und lädt die anderen als Kollaborateure ein.
+
+1. Einigung auf eine Buchstruktur
+1. Anlegen der Struktur durch den Initiator
+1. Bearbeitung von Teilen durch die Gruppe in einem eigenen **branch**. In den Grundeinstellungen führt nur das Speichern in **master** zum Bauen des Buches.
+1. Zusammenführen (**merge**) der einzelnen *branches* durch den Initiator
+
+# Zwischenfazit
+## Zwischenfazit
+
+- Einschätzung der Gruppe
+
+. . .
+
+- **Maximum Forkability**: Die OER muss in jedem Moment **technisch** gesehen allen gehören, die daran teilhaben.
+    - Aber: Kollaborateure können den *Source Code* des gemeinsamen Buches nicht herunterladen
+
+# Git und GitHub
 ## Grundlage: Git
 
 - "Git [...] ist eine freie Sofware zur verteilten Versionsverwaltung von Dateien." (Wikipedia)  
@@ -151,37 +191,62 @@ Durch Kopieren kommen Nutzer in den Besitz einer bearbeitbaren Fassung. Aber:
 - Schreiben: https://github.com/showcases/writing
 - Deutsche Bundesgesetze und -verordnungen: http://bundestag.github.io/gesetze/
 
+## Fork und Pull Request
 
-## Hands-on: Let's fork!
+- Zwei Handlungen stehen im Mittelpunkt der Kollaboration: **fork** und **pull request**
+    - **fork**: Kopieren eines *repositories* auf GitHub
+    - **pull request**: Aufforderung an die Quelle des Forks, Beiträge aus der Kopie zu integrieren.  
+    Hier besteht Raum für Qualitätskontrolle und Aushandlungsprozesse
+- Das Konzept von *fork* und *pull request* konstituiert eine neue Kulturtechnik des Teilens und ist eine digitale Entsprechung für Nehmen und Geben
 
-- Am Beispiel dieser Präsentation, die bei GitHub gehostet wird, probieren alle das Forken aus. Dann ändern sie etwas in dem Fork und schicken mir einen Pull Request.
+<!--
 
+## Zusammenarbeit auf GitHub
 
-## Anforderungen an eine zukünftige Architektur des Teilens
+\begin{center}
+\includegraphicscopyright[width=0.85\textwidth]{./abb/forkflow.eps}{Abbildung: Typische Schritte beim Teilen über Git/GitHub Quelle: Axel Dürkop}
+\end{center}
 
-- Forkability, Connected Copies, Interplanetary File System
+-->
 
+## Veröffentlichung des Buchs auf GitHub
+
+\includegraphicscopyright[width=1\textwidth]{./abb/export-to-github.png}{Quelle: GitBook Settings für das Buch}
+
+- Umständlich, aber notwendig: Einen "blinden Kollaborateur" mit Level **Visible**, um einen sicheren Import zu ermöglichen.
+
+## Let's fork!
+
+**Durchlauf 3: Die Teilnehmenden erstellen einen GitHub-Account und forken ein Buch**
+
+- Die Teilnehmenden erstellen einen GitHub-Account
+- In GitHub: Forken eines/des Buches
+- In GitBook: "Neues Buch", Tab "GIT"
+
+. . .
+
+- So kann jede OER, die als GitBook bei GitHub vorliegt, für die eigene Bearbeitung genutzt werden.
+- Voraussetzung: Jedes GitBook sollte auf GitHub gespiegelt werden.
 
 ## Mit GitHub-Account verbinden
 
+**Durchlauf 4: GitBook mit GitHub verbinden, um Änderungen immer gleich bei GitHub zu veröffentlichen**
+
 - Fall 1: GitHub-Account vorhanden
-    - In GitBook: Unter *Settings* verbinden
-    - Nach Weiterleitung zu GitHub: Einloggen mit Account, der verbunden werden soll.
-    - Anschließend ist Einloggen in GitBook mit diesem Account möglich
-    - In GitBook: Anpassen der Rechte unter *Settings*
+    - **Wichtig**: GitHub-User darf nicht im gleichen Browser eingeloggt sein!
+    - In GitBook: Unter *Settings* mit GitHub verbinden
+    - Nach Weiterleitung zu GitHub: Einloggen mit Account
+    - In GitBook: Anpassen der Rechte unter *Settings* (private!)
+    - Nun können Repos von GitHub direkt beim Erstellen neuer Bücher importiert werden.
+    - Änderungen des Buch im GitBook-Editor werden sofort zu GitHub gepusht, von dort stößt ein so genannter *hook* das Bauen des Buchs auf GitBook an
 - Fall 2: **Kein** GitHub-Account vorhanden
     - Registrierung bei GitHub, Email-Bestätigung
     - In GitBook: wie unter Fall 1
 
 ## Literatur
 
+- [GitBook-Dokumentation](http://help.gitbook.com/)
 - [How to Fork a Syllabus on GitHub](http://chronicle.com/blogs/profhacker/how-to-fork-a-syllabus-on-github/39447)
 - [Seven Ways To Use GitHub That Aren't Coding](http://readwrite.com/2013/11/08/seven-ways-to-use-github-that-arent-coding)
 - [Gitty up: 12 things other than programming code that are managed on GitHub](http://www.itworld.com/article/2822952/open-source-tools/142227-Gitty-up-12-things-other-than-programming-code-that-are-managed-on-GitHub.html)
 - [Deutsche Bundesgesetze und -verordnungen](http://bundestag.github.io/gesetze/)
-
-## TODO
-
-- EtherCalc-Adresse des ZLL
-- Sammlung von Non-Code-Projekten
-- Prüfen, wie jemand, der bei GitHub geforkt wurde, prüfen kann, wer das war.
