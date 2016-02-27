@@ -45,19 +45,18 @@ nocite: |
 1. Vorstellung GitBook
 1. Ein erstes Buch mit Markdown
 1. Ein zweites Buch *kollaborativ*
-1. Veröffentlichung der Bücher bei *GitHub*
+1. Veröffentlichung des zweiten Buchs bei *GitHub*
 1. Forken (Kopieren) von Büchern und Weiterbearbeitung
+1. (Verbinden von GitBook- und GitHub-Account)
 1. Ausblick und Diskussion
 
 ## Diese Präsentation
 
 Die Präsentation steht unter CC-BY auf GitHub zum Forken bereit.
 
-http://meine-praesentation.de
+\footnotesize https://github.com/iTBH/oer-kollaborativ-mit-gitbook-entwickeln
 
-<!-- ############## TODO ######################### -->
-\includegraphicscopyright[width=.4\textwidth]{./abb/pyprocard}{Abb.: Fork me on GitHub!}
-<!-- ############## TODO ######################### -->
+\includegraphicscopyright[width=.4\textwidth]{./abb/github-repo-praese}{Abb.: Fork me on GitHub!}
 
 # Einführung
 ## Definition von OER nach UNESCO
