@@ -5,7 +5,7 @@ subtitle: |
   Fork und Pull Request: neue Kulturtechniken des Teilens?
 author: |
   Axel Dürkop
-date: \myformat\formatdate{29}{02}{2016}
+date: \myformat\formatdate{29}{02}{2016}, OERcamp16, Berlin
 bibliography: /home/duerkop/Dokumente/TUHH_lokal/Promotion/Diss/_Dissertation.bib
 csl: /home/duerkop/.pandoc/zitierstile/apa-de.csl
 nocite: |
