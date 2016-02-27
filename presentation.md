@@ -5,7 +5,8 @@ subtitle: |
   Fork und Pull Request: neue Kulturtechniken des Teilens?
 author: |
   Axel Dürkop
-date: \myformat\formatdate{29}{02}{2016}, OERcamp16, Berlin
+date: |
+  \myformat\formatdate{29}{02}{2016}, OERcamp16, Berlin  
 bibliography: /home/duerkop/Dokumente/TUHH_lokal/Promotion/Diss/_Dissertation.bib
 csl: /home/duerkop/.pandoc/zitierstile/apa-de.csl
 nocite: |
@@ -14,9 +15,9 @@ nocite: |
 ## Vorstellungsrunde
 
 - Axel Dürkop, wiss. Mitarbeiter am iTBH, TU Hamburg
-    - Doktorand zum Thema Offenheit in der Lehre
+    - Doktorand, Thema: Offenheit in der Lehre
     - Dozent für Informatik, Programmierer
-    - Verfechter freier und offener Software
+    - Liebhaber und Verfechter freier und offener Software
 - Vorstellung der Teilnehmenden
 - Erwartungen
 
@@ -236,11 +237,16 @@ Durch Kopieren kommen Nutzer in den Besitz einer bearbeitbaren Fassung. Aber:
     - In GitBook: Unter *Settings* mit GitHub verbinden
     - Nach Weiterleitung zu GitHub: Einloggen mit Account
     - In GitBook: Anpassen der Rechte unter *Settings* (private!)
-    - Nun können Repos von GitHub direkt beim Erstellen neuer Bücher importiert werden.
-    - Änderungen des Buch im GitBook-Editor werden sofort zu GitHub gepusht, von dort stößt ein so genannter *hook* das Bauen des Buchs auf GitBook an
+    - Nun können Repos von GitHub direkt beim Erstellen neuer Bücher importiert werden und Änderungen des Buch im GitBook-Editor werden sofort zu GitHub gepusht, von dort stößt ein so genannter *hook* das Bauen des Buchs auf GitBook an
 - Fall 2: **Kein** GitHub-Account vorhanden
     - Registrierung bei GitHub, Email-Bestätigung
     - In GitBook: wie unter Fall 1
+
+## Lizenz
+
+Dieses Werk ist lizenziert unter einer [Creative Commons Namensnennung 4.0 International Lizenz](http://creativecommons.org/licenses/by/4.0/).
+
+\includegraphicscopyright[]{./abb/cc.png}{}
 
 ## Literatur
 
